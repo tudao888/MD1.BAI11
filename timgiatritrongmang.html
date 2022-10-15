@@ -6,13 +6,23 @@
 </head>
 <body>
 <script>
-    let a = +prompt("Nhap vao 1 gia tri");
+    // let a = +prompt("Nhap vao 1 gia tri");
+    // let nums = [-3,4,5,9,7,10];
+    // for (let i = 0; i <= nums.length;i++) {
+    //     if (a == nums[i]) {
+    //         alert( nums[i] + "found at" + i)
+    //     }
+    // }
+
     let nums = [-3,4,5,9,7,10];
-    for (let i = 0; i <= nums.length;i++) {
-        if (a == nums[i]) {
-            alert( nums[i] + "found at" + i)
+    let max = nums[0];
+    let index = 0;
+    for (let i = 1; i <= nums.length;i++) {
+        if (nums[i] > max) {
+            max = nums[i];
         }
     }
+    alert(max + "o vi tri" + index +"la so lon nhat" )
 
 </script>
 </body>
